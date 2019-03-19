@@ -10,6 +10,8 @@
 
 <script type="text/javascript">
 	document.querySelector('button').onclick = function () {
+		console.log("Clicked");
+		alert("clicked");
 		// parent.postMessage("message to be sent", "http://the-website-that-will-receive-the-msg.com")
 		parent.postMessage("myevent", "*")
 	};
