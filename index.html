@@ -13,6 +13,7 @@
 		console.log("Clicked");
 		alert("clicked");
 		// parent.postMessage("message to be sent", "http://the-website-that-will-receive-the-msg.com")
-		parent.postMessage("myevent", "*")
+		var radioVal = document.querySelector('input[name="url_type"]:checked').value;
+		parent.postMessage(radioVal, "*")
 	};
 </script>
